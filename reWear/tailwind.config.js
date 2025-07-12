@@ -11,12 +11,18 @@ module.exports = {
     extend: {
       colors: {
         // Custom Shades
-		muted: '#f3f4f6',
-        sage: '#84cc16',
-        'sage-light': '#a3e635',
-        background: '#0f172a',
-        foreground: '#e2e8f0',
-        'muted-foreground': '#6b7280',
+		    // muted: '#f3f4f6',
+        // sage: '#84cc16',
+        // 'sage-light': '#a3e635',
+        // background: '#0f172a',
+        // foreground: '#e2e8f0',
+        // 'muted-foreground': '#6b7280',
+        sage: "#89B99B",
+        "sage-light": "#cde9dc",
+        muted: "#f3f4f6",
+        background: "#ffffff",
+        foreground: "#111827",
+        "muted-foreground": "#6b7280",
         richblack: {
           5: "#F5F5F5",
           25: "#D9D9D9",

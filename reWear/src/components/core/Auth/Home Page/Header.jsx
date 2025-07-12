@@ -12,7 +12,7 @@ const Header = () => {
             <span className="text-white font-bold text-lg">R</span>
           </div>
           <span className="text-2xl font-bold text-green-500 text-foreground">
-            Re<span className="text-white">Wear</span>
+            Re<span className="text-black">Wear</span>
           </span>
         </div>
         
@@ -32,13 +32,13 @@ const Header = () => {
         <div className="flex items-center space-x-4">
           {/* Points */}
           <div className="hidden sm:flex items-center space-x-2 bg-sage-light/20 px-3 py-2 rounded-lg">
-            <Coins className="h-4 w-4 text-sage" />
-            <span className="font-semibold text-sage">847</span>
+            <Coins className="h-4 w-4 text-green-500" />
+            <span className="font-semibold text-green-500">847</span>
             <span className="text-sm text-muted-foreground">pts</span>
           </div>
           
           {/* Add Item */}
-          <Button size="sm" className="bg-sage hover:bg-sage/90 transition-smooth">
+          <Button size="sm" className="bg-green-500 hover:bg-green-400 transition-smooth">
             <Plus className="h-4 w-4 mr-2" />
             Add Item
           </Button>
