@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, TrendingUp } from "lucide-react";
-import heroImage from "@/assets/hero-image.jpg";
+import { Button } from "../../../../Ui/Button";
+// import { ArrowRight, Users, TrendingUp } from "lucide-react";
+// import heroImage from "../../../../assets/heroImage"; // Replace with actual hero image path
 
 const Hero = () => {
   return (
@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Background */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        // style={{ backgroundImage: `url(${heroImage})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-br from-sage/80 via-earth/60 to-warm/70"></div>
       </div>
@@ -26,7 +26,7 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <Button size="lg" className="bg-white text-sage hover:bg-white/90 transition-smooth">
             Start Trading
-            <ArrowRight className="ml-2 h-5 w-5" />
+            {/* <ArrowRight className="ml-2 h-5 w-5" /> */}
           </Button>
           <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 transition-smooth">
             Learn More

@@ -1,13 +1,25 @@
-import './App.css'
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import React from "react";
+import Home from "./Pages/HomePage";
+
+import { useSelector } from "react-redux";
+
 
 function App() {
-  return (
-    <div className="min-h-screen bg-gray-900 flex items-center justify-center">
-      <h1 className="text-5xl text-yellow-300 font-bold">Tailwind is Working 🚀</h1>
-      Hello brother
-    </div>
-  )
-}
 
+
+  return (
+    <div className="w-screen min-h-screen bg-richblack-900 flex flex-col font-inter">
+   
+
+      {/* Set up routing */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+      </Routes>
+    </div>
+  );
+}
 
 export default App;

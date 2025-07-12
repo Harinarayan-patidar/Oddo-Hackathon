@@ -1,4 +1,8 @@
+<<<<<<< HEAD:vite-project/backend/models/User.js
 const mongoose = require("mongoose");
+=======
+import mongoose, from "mongoose";
+>>>>>>> 42f22e1e99df78a6eb75fa3bd7412120cae00ae2:vite-project/Oddo-Server/models/User.js
 const userSchema = new mongoose.Schema({
     firstName : {type : String, required : true,trim : true},
     lastName : {type : String,required : true,trim : true,},
