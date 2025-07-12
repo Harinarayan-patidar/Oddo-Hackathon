@@ -166,7 +166,7 @@ function SignupForm(){
             </span>
           </label>
           <label className="relative">
-            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-white">
+            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richbalck-500">
               Confirm Password <sup className="text-pink-200">*</sup>
             </p>
             <input
