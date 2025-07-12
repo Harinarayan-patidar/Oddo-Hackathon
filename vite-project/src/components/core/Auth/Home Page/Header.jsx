@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { Button } from "../../../../Ui/Button";
+import { Badge } from "../../../../Ui/Badge";
 import { Search, Plus, User, Coins } from "lucide-react";
 
 const Header = () => {
@@ -9,10 +9,10 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center space-x-3">
           <div className="w-8 h-8 bg-gradient-hero rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-sm">R</span>
+            <span className="text-white font-bold text-lg">R</span>
           </div>
-          <span className="text-2xl font-bold text-foreground">
-            Re<span className="text-sage">Wear</span>
+          <span className="text-2xl font-bold text-green-500 text-foreground">
+            Re<span className="text-white">Wear</span>
           </span>
         </div>
         

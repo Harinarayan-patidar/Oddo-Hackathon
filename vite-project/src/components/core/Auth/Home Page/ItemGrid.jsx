@@ -1,11 +1,11 @@
 import React from "react";
 import ItemCard from "./itemCard";
-import { Button } from "../ui/button";
+import { Button } from "../../../../Ui/Button";
 
-import item1 from "../../assets/item-1.jpg";
-import item2 from "../../assets/item-2.jpg";
-import item3 from "../../assets/item-3.jpg";
-import item4 from "../../assets/item-4.jpg";
+import item1 from "../../../../assets/item1.jpg";
+import item2 from "../../../../assets/item2.jpg";
+import item3 from "../../../../assets/item3.jpg";
+import item4 from "../../../../assets/item4.jpg";
 
 const mockItems = [
   {
