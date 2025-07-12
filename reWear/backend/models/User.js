@@ -12,9 +12,7 @@ const userSchema = new mongoose.Schema({
         city : String,
         state : String,
     },
-    points : {
-        type : Number , default : 100
-    },
+  
     role : {type : String, enum : ['user' ,'admin'],default : 'user'},
 
 },

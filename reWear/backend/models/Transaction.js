@@ -7,5 +7,9 @@ const transactionSchema = new mongoose.Schema({
   status: { type: String, enum: ['pending', 'completed', 'cancelled'], default: 'pending' },
 }, { timestamps: true });
 
+// for performance optimization adding indexes
+ transactionSchema.index({sender : 1 , status:1})
+ transactionSchema.index({receiver : 1 , status:1});
+ transactionSchema.index({item : 1, type: 1,status:1})
 module.exports = mongoose.model("Transactions",transactionSchema);
 
