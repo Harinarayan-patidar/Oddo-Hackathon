@@ -1,7 +1,6 @@
 const User = require('../models/User');
 const Item = require('../models/Item');
 
-
 exports.getProfile = async (req, res) => {
   try {
     const user = await User.findById(req.user.id).select('-password');

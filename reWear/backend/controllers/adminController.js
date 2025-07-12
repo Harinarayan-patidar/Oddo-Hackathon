@@ -38,7 +38,6 @@ exports.approveItem = async (req, res) => {
         message: 'Item not found'
       });
     }
-
     res.json({
       success: true,
       message: 'Item approved successfully',
