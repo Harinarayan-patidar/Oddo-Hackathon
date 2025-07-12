@@ -24,7 +24,7 @@ const Hero = () => {
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          <Button size="lg" className="bg-white text-sage hover:bg-white/90 transition-smooth">
+          <Button size="lg" className="bg-white text-black hover:bg-white/90 transition-smooth">
             Start Trading
             {/* <ArrowRight className="ml-2 h-5 w-5" /> */}
           </Button>

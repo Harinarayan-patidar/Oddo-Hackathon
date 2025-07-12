@@ -1,6 +1,6 @@
 const Transaction = require("../models/Transaction.js");
-const Item = require("../models/Item");
-const User = require ("../models/User");
+const Item = require("../models/Item.js");
+const User = require ("../models/User.js");
 exports.createSwapRequest = async (req, res) => {
   try {
     const { itemId, myItemId } = req.body; 
