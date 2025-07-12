@@ -7,8 +7,8 @@ require("dotenv").config();
 const database = require("./config/database");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
-const {cloudinaryConnect } = require("./config/cloudinary");
 const fileUpload = require("express-fileupload");
+const cloudinary = require("cloudinary").v2;
 
 const PORT = process.env.PORT || 4000
 
@@ -33,7 +33,10 @@ app.use(
 )
 
 //cloudinary connect
-cloudinaryConnect();
+console.log(
+  "Cloudinary configured. Cloud name:",
+  cloudinary.config().cloud_name
+);
 
 //routes
 app.use("/api/v1/auth" , userRoutes);
