@@ -44,58 +44,6 @@ exports.auth = async(req , res , next) =>{
 }
 
 
-//isStudent
-   exports.isStudent = async (req,res) =>{
-       try {
-        const userDetails = await User.findOne({ email: req.user.email });
-
-           if(userDetails !== "Student"){
-            return res.status(401).json({
-                success:false,
-                message:'this is a protect route for students only',
-            })
-           }
-        
-           next();
-        
-       } catch (error) {
-           res.status(500).json({
-            success:false,
-            message:"user role cannot be verified"
-           })
-       }
-
-    
-   }
-
-//isInstructor
-
-exports.isInstructor = async (req,res, next) =>{
-    try {
-        const userDetails = await User.findOne({ email: req.user.email });
-        console.log("User account  is:-",userDetails.accountType)
-        if( userDetails.accountType !== "Instructor"){
-         return res.status(401).json({
-             success:false,
-             message:'this is a protect route for Instructor only',
-         })
-        }
-       console.log("yaha tak completed")
-        next();
-     
-    } catch (error) {
-        res.status(500).json({
-         success:false,
-         message:"user role cannot be verified"
-        })
-    }
-
- 
-}
-
-
-// isAdmin
-
 
 exports.isAdmin = async (req,res, next) =>{
     
