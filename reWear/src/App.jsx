@@ -3,8 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import React from "react";
 import Home from "./Pages/HomePage";
 
-import { useSelector } from "react-redux";
-
 
 function App() {
 
@@ -16,7 +14,6 @@ function App() {
       {/* Set up routing */}
       <Routes>
         <Route path="/" element={<Home />} />
-
       </Routes>
     </div>
   );

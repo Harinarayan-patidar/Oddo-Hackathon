@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+// eslint-disable-next-line no-undef
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -10,6 +11,12 @@ module.exports = {
     extend: {
       colors: {
         // Custom Shades
+		muted: '#f3f4f6',
+        sage: '#84cc16',
+        'sage-light': '#a3e635',
+        background: '#0f172a',
+        foreground: '#e2e8f0',
+        'muted-foreground': '#6b7280',
         richblack: {
           5: "#F5F5F5",
           25: "#D9D9D9",
@@ -71,6 +78,12 @@ module.exports = {
         hotpink: "#FF69B4",
         skyblue: "#87CEEB",
         olive: "#808000",
+      },
+	  transitionTimingFunction: {
+        smooth: 'cubic-bezier(0.4, 0, 0.2, 1)',
+      },
+      backgroundImage: {
+        'gradient-hero': 'linear-gradient(to right, #22c55e, #16a34a)',
       },
     },
   },
