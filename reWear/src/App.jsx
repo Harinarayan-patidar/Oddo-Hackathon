@@ -5,6 +5,7 @@ import Home from "./Pages/HomePage";
 import Login from "./Pages/Login"
 import Signup from "./Pages/Signup"
 import VerifyEmail from "./Pages/VerifyEmail";
+import UploadForm from "./components/core/Auth/ItemUploadForm/UploadForm";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/verify-email" element={<VerifyEmail/>} />
+        <Route path="/upload" element={<UploadForm />} />
 
         <Route path="/" element={<Home />} />
       </Routes>
