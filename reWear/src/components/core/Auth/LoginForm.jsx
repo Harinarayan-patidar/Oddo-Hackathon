@@ -54,7 +54,7 @@ function LoginForm() {
     >
       {/* Email Input */}
       <label className="w-full">
-        <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+        <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-500">
           Email Address <sup className="text-pink-200">*</sup>
         </p>
         <input
@@ -73,7 +73,7 @@ function LoginForm() {
 
       {/* Password Input */}
       <label className="relative">
-        <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+        <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-500">
           Password <sup className="text-pink-200">*</sup>
         </p>
         <input

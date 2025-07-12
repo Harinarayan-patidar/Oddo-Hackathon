@@ -18,7 +18,7 @@ function Template({title , description1 , description2 , image , formType}) {
                             {title}
                         </h1>
                          
-                         <p>
+                         <p className='text-white'>
                             <span>{description1}</span>
                             <span>{description2}</span>
                          </p>

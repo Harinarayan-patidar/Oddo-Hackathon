@@ -5,8 +5,8 @@ function Login() {
     <div className="min-h-screen flex items-center justify-center bg-background">
       <Template
         title="Welcome Back"
-        description1="Build skills for today, tomorrow, and beyond."
-        description2="Education to future-proof your career."
+        description1="Login to your account to continue exploring our platform."
+        description2="If you don't have an account, you can sign up."
         // image={loginImg}
         formType="login"
       />

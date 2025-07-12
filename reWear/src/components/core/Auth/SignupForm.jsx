@@ -79,14 +79,14 @@ function SignupForm(){
   ]
 
   return (
-    <div>
+    <div  className="bg-green-100 p-8 rounded-lg shadow-md">
       {/* Tab */}
       <Tab tabData={tabData} field={accountType} setField={setAccountType} />
       {/* Form */}
-      <form onSubmit={handleOnSubmit} className="flex w-full flex-col gap-y-4">
+      <form onSubmit={handleOnSubmit} className="flex w-full  flex-col gap-y-4">
         <div className="flex gap-x-4">
           <label>
-            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-black">
               First Name <sup className="text-pink-200">*</sup>
             </p>
             <input
@@ -99,11 +99,11 @@ function SignupForm(){
               style={{
                 boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
               }}
-              className="w-full rounded-[0.5rem] bg-richblack-800 p-[12px] text-richblack-5"
+              className="w-full rounded-[0.5rem] bg-richblack-800 p-[12px] text-white"
             />
           </label>
           <label>
-            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-black">
               Last Name <sup className="text-pink-200">*</sup>
             </p>
             <input
@@ -116,12 +116,12 @@ function SignupForm(){
               style={{
                 boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
               }}
-              className="w-full rounded-[0.5rem] bg-richblack-800 p-[12px] text-richblack-5"
+              className="w-full rounded-[0.5rem] bg-richblack-800 p-[12px] text-white"
             />
           </label>
         </div>
         <label className="w-full">
-          <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+          <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-black">
             Email Address <sup className="text-pink-200">*</sup>
           </p>
           <input
@@ -139,7 +139,7 @@ function SignupForm(){
         </label>
         <div className="flex gap-x-4">
           <label className="relative">
-            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-black">
               Create Password <sup className="text-pink-200">*</sup>
             </p>
             <input
@@ -152,7 +152,7 @@ function SignupForm(){
               style={{
                 boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
               }}
-              className="w-full rounded-[0.5rem] bg-richblack-800 p-[12px] pr-10 text-richblack-5"
+              className="w-full rounded-[0.5rem] bg-richblack-800 p-[12px] pr-10 text-white"
             />
             <span
               onClick={() => setShowPassword((prev) => !prev)}
@@ -166,7 +166,7 @@ function SignupForm(){
             </span>
           </label>
           <label className="relative">
-            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+            <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-white">
               Confirm Password <sup className="text-pink-200">*</sup>
             </p>
             <input
@@ -179,7 +179,7 @@ function SignupForm(){
               style={{
                 boxShadow: "inset 0px -1px 0px rgba(255, 255, 255, 0.18)",
               }}
-              className="w-full rounded-[0.5rem] bg-richblack-800 p-[12px] pr-10 text-richblack-5"
+              className="w-full rounded-[0.5rem] bg-richblack-800 p-[12px] pr-10 text-white"
             />
             <span
               onClick={() => setShowConfirmPassword((prev) => !prev)}

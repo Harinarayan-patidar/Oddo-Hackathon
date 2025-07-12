@@ -5,9 +5,9 @@ import Template from '../components/core/Auth/Template'
 function Signup() {
   return (
     <Template
-      title ="hari"
-    description1="lorem10 dkkd kkdmk ejnk nfjn"
-     description2 = "hello ji kese ho"
+      title ="reWear"
+    description1="ReWear is a community-driven platform to swap or redeem unused clothes, promoting sustainable fashion and reducing textile waste."
+     description2 = "Join us in making a positive impact on the environment by giving your clothes a second life."
      image ={signupImage}
      formType = "signup"
     
