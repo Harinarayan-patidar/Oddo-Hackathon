@@ -2,8 +2,9 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import React from "react";
 import Home from "./Pages/HomePage";
-
-import { useSelector } from "react-redux";
+import Login from "./Pages/Login"
+import Signup from "./Pages/Signup"
+import VerifyEmail from "./Pages/VerifyEmail";
 
 
 function App() {
@@ -15,8 +16,11 @@ function App() {
 
       {/* Set up routing */}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/verify-email" element={<VerifyEmail/>} />
 
+        <Route path="/" element={<Home />} />
       </Routes>
     </div>
   );
