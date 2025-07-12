@@ -6,5 +6,6 @@ export default defineConfig({
   plugins: [react()],
    server: {
     open: true, // 🚀 This opens the browser automatically
+    hmr: true  
   },
 })
