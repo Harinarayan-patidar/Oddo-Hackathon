@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
-const userRoutes = require("./routes/User");
+const userRoutes = require("./routes/user.routes");
+const adminRoutes = require("./routes/admin.routes");
+const itemsRoutes = require("./routes/item.routes");
+const transactionRoutes = require("./routes/transaction.controller");
 require("dotenv").config();
 const database = require("./config/database");
 const cookieParser = require("cookie-parser");
@@ -33,8 +36,9 @@ console.log(
 
 //routes
 app.use("/api/v1/auth" , userRoutes);
-
-
+app.use("/api/v1/auth",adminRoutes);
+app.use("/api/v1/auth",itemsRoutes);
+app.use("/api/v1/auth",transactionRoutes);
 // defRoute
 app.get("/", (req,res)=>{
  return res.json({
