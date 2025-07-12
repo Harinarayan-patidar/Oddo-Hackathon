@@ -1,12 +1,73 @@
-# React + Vite
+# ReWear – Community Clothing Exchange 👕♻️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🧩 Problem Statement 3:
+**Build a web-based platform to exchange unused clothing through direct swaps or a point-based system, promoting sustainable fashion.**
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 👥 Team Members
 
-## Expanding the ESLint configuration
+| Name               | Role           |
+|--------------------|----------------|
+| Harinarayan Patidar | Team Leader & Backend Lead |
+| Kavendra Kumar | Frontend Developer |
+| Rajni Rajawat | UI/UX Designer |
+| Karan Sahu | Full Stack Developer |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🌍 Project Overview
+
+**ReWear** is a community-driven clothing exchange platform designed to reduce textile waste and promote sustainable fashion. Users can swap clothes directly with others or redeem them using a point-based system.
+
+---
+
+## 🚀 Tech Stack
+
+| Layer       | Technology          |
+|-------------|---------------------|
+| Frontend    | React.js, Tailwind CSS |
+| Backend     | Node.js, Express.js |
+| Database    | MongoDB             |
+| Auth        | JWT, bcrypt         |
+| Image Upload| Cloudinary          |
+| Deployment  | Vercel (Frontend), Render (Backend) |
+
+---
+
+## ✨ Features
+
+### 👤 User
+- Email/password signup & login
+- Dashboard with profile, points, and swap status
+- Add and list new clothing items
+- Browse and request swaps
+- Redeem items using points
+
+### 🎨 Landing Page
+- Platform introduction
+- CTA buttons: “Start Swapping”, “Browse Items”, “List an Item”
+- Featured items carousel
+
+### 👕 Item Details
+- View item description and images
+- Swap directly or redeem via points
+- Item status (Available/Swapped)
+
+### 🧑‍⚖️ Admin Panel
+- Approve/reject new item listings
+- Remove spam/inappropriate content
+- Lightweight, secure dashboard
+
+---
+
+## 🛠️ Installation & Setup
+
+### Backend
+```bash
+git clone https://github.com/your-username/rewear-backend.git
+cd rewear-backend
+npm install
+
+# Create .env file
+touch .env
